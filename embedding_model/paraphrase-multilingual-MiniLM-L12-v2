@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html class="">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=no"
+		/>
+		<meta name="description" content="We’re on a journey to advance and democratize artificial intelligence through open source and open science." />
+		<meta property="fb:app_id" content="1321688464574422" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@huggingface" />
+		<meta property="og:title" content="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 · Hugging Face" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2" />
+		<meta property="og:image" content="https://thumbnails.huggingface.co/social-thumbnails/models/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2.png" />
+
+		<link rel="stylesheet" href="/front/build/style.ce96cc782.css" />
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+		/>
+
+		 
+
+		<title>sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 · Hugging Face</title>
+	</head>
+	<body
+		class="flex flex-col min-h-screen bg-white dark:bg-gray-950 text-black ModelPage"
+	>
+		<div class="flex flex-col min-h-screen ">
+	<div class="SVELTE_HYDRATER contents" data-props="{&quot;apiInferenceUrl&quot;:&quot;https://api-inference.huggingface.co&quot;,&quot;hfCloudName&quot;:&quot;private&quot;,&quot;isAuth&quot;:false,&quot;isHfCloud&quot;:false,&quot;isWide&quot;:false}" data-target="MainHeader"><header class="border-b border-gray-100"><div class="w-full px-4 lg:px-6 xl:container flex items-center h-16"><div class="flex flex-1 items-center"><a class="flex flex-none items-center mr-5 lg:mr-6" href="/"><img alt="Hugging Face's logo" class="md:mr-2 w-7" src="/front/assets/huggingface_logo-noborder.svg">
+				<span class="hidden text-lg font-bold whitespace-nowrap md:block">Hugging Face</span></a>
+			
+			<div class="relative flex-1 lg:max-w-sm mr-2 sm:mr-4 lg:mr-6"><input autocomplete="off" class="w-full dark:bg-gray-950 
+			form-input-alt h-9 pl-8 pr-3 focus:shadow-xl" name="" placeholder="Search models, datasets, users..."  spellcheck="false" type="text">
+	<svg class="absolute left-2.5 top-2.5 text-gray-400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M30 28.59L22.45 21A11 11 0 1 0 21 22.45L28.59 30zM5 14a9 9 0 1 1 9 9a9 9 0 0 1-9-9z" fill="currentColor"></path></svg>
+	</div>
+			<button class="lg:hidden relative flex-none place-self-stretch flex items-center justify-center w-8" type="button"><svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="22" height="22" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" fill="currentColor"><path d="M4 24h24v2H4z"></path><path d="M4 12h24v2H4z"></path><path d="M4 18h24v2H4z"></path><path d="M4 6h24v2H4z"></path></svg></button>
+
+</div>
+		<nav aria-label="Main" class="ml-auto hidden lg:block"><ul class="flex items-center space-x-2"><li><a class="flex items-center group px-2 py-0.5 dark:hover:text-gray-400 hover:text-indigo-700" href="/models"><svg class="mr-1.5 text-gray-400 group-hover:text-indigo-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path class="uim-quaternary" d="M20.23 7.24L12 12L3.77 7.24a1.98 1.98 0 0 1 .7-.71L11 2.76c.62-.35 1.38-.35 2 0l6.53 3.77c.29.173.531.418.7.71z" opacity=".25" fill="currentColor"></path><path class="uim-tertiary" d="M12 12v9.5a2.09 2.09 0 0 1-.91-.21L4.5 17.48a2.003 2.003 0 0 1-1-1.73v-7.5a2.06 2.06 0 0 1 .27-1.01L12 12z" opacity=".5" fill="currentColor"></path><path class="uim-primary" d="M20.5 8.25v7.5a2.003 2.003 0 0 1-1 1.73l-6.62 3.82c-.275.13-.576.198-.88.2V12l8.23-4.76c.175.308.268.656.27 1.01z" fill="currentColor"></path></svg>
+					Models</a>
+			</li><li><a class="flex items-center group px-2 py-0.5 dark:hover:text-gray-400 hover:text-red-700" href="/datasets"><svg class="mr-1.5 text-gray-400 group-hover:text-red-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 25 25"><ellipse cx="12.5" cy="5" fill="currentColor" fill-opacity="0.25" rx="7.5" ry="2"></ellipse><path d="M12.5 15C16.6421 15 20 14.1046 20 13V20C20 21.1046 16.6421 22 12.5 22C8.35786 22 5 21.1046 5 20V13C5 14.1046 8.35786 15 12.5 15Z" fill="currentColor" opacity="0.5"></path><path d="M12.5 7C16.6421 7 20 6.10457 20 5V11.5C20 12.6046 16.6421 13.5 12.5 13.5C8.35786 13.5 5 12.6046 5 11.5V5C5 6.10457 8.35786 7 12.5 7Z" fill="currentColor" opacity="0.5"></path><path d="M5.23628 12C5.08204 12.1598 5 12.8273 5 13C5 14.1046 8.35786 15 12.5 15C16.6421 15 20 14.1046 20 13C20 12.8273 19.918 12.1598 19.7637 12C18.9311 12.8626 15.9947 13.5 12.5 13.5C9.0053 13.5 6.06886 12.8626 5.23628 12Z" fill="currentColor"></path></svg>
+					Datasets</a>
+			</li><li><a class="flex items-center group px-2 py-0.5 dark:hover:text-gray-400 hover:text-blue-700" href="/spaces"><svg class="mr-1.5 text-gray-400 group-hover:text-blue-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" viewBox="0 0 25 25"><path opacity=".5" d="M6.016 14.674v4.31h4.31v-4.31h-4.31ZM14.674 14.674v4.31h4.31v-4.31h-4.31ZM6.016 6.016v4.31h4.31v-4.31h-4.31Z" fill="currentColor"></path><path opacity=".75" fill-rule="evenodd" clip-rule="evenodd" d="M3 4.914C3 3.857 3.857 3 4.914 3h6.514c.884 0 1.628.6 1.848 1.414a5.171 5.171 0 0 1 7.31 7.31c.815.22 1.414.964 1.414 1.848v6.514A1.914 1.914 0 0 1 20.086 22H4.914A1.914 1.914 0 0 1 3 20.086V4.914Zm3.016 1.102v4.31h4.31v-4.31h-4.31Zm0 12.968v-4.31h4.31v4.31h-4.31Zm8.658 0v-4.31h4.31v4.31h-4.31Zm0-10.813a2.155 2.155 0 1 1 4.31 0 2.155 2.155 0 0 1-4.31 0Z" fill="currentColor"></path><path opacity=".25" d="M16.829 6.016a2.155 2.155 0 1 0 0 4.31 2.155 2.155 0 0 0 0-4.31Z" fill="currentColor"></path></svg>
+					Spaces</a>
+			</li><li><a class="flex items-center group px-2 py-0.5 dark:hover:text-gray-400 hover:text-yellow-700" href="/docs"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="mr-1.5 text-gray-400 group-hover:text-yellow-500" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path opacity="0.5" d="M20.9022 5.10334L10.8012 10.8791L7.76318 9.11193C8.07741 8.56791 8.5256 8.11332 9.06512 7.7914L15.9336 3.73907C17.0868 3.08811 18.5002 3.26422 19.6534 3.91519L19.3859 3.73911C19.9253 4.06087 20.5879 4.56025 20.9022 5.10334Z" fill="currentColor"></path><path d="M10.7999 10.8792V28.5483C10.2136 28.5475 9.63494 28.4139 9.10745 28.1578C8.5429 27.8312 8.074 27.3621 7.74761 26.7975C7.42122 26.2327 7.24878 25.5923 7.24756 24.9402V10.9908C7.25062 10.3319 7.42358 9.68487 7.74973 9.1123L10.7999 10.8792Z" fill="currentColor" fill-opacity="0.75"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M21.3368 10.8499V6.918C21.3331 6.25959 21.16 5.61234 20.8346 5.03949L10.7971 10.8727L10.8046 10.874L21.3368 10.8499Z" fill="currentColor"></path><path opacity="0.5" d="M21.7937 10.8488L10.7825 10.8741V28.5486L21.7937 28.5234C23.3344 28.5234 24.5835 27.2743 24.5835 25.7335V13.6387C24.5835 12.0979 23.4365 11.1233 21.7937 10.8488Z" fill="currentColor"></path></svg>
+					Docs</a>
+			</li>
+		<li><div class="relative ">
+	<button class="px-2 py-0.5 group hover:text-green-700 dark:hover:text-gray-400 flex items-center
+			" type="button">
+		<svg class="mr-1.5 text-gray-400 group-hover:text-green-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path class="uim-tertiary" d="M19 6H5a3 3 0 0 0-3 3v2.72L8.837 14h6.326L22 11.72V9a3 3 0 0 0-3-3z" opacity=".5" fill="currentColor"></path><path class="uim-primary" d="M10 6V5h4v1h2V5a2.002 2.002 0 0 0-2-2h-4a2.002 2.002 0 0 0-2 2v1h2zm-1.163 8L2 11.72V18a3.003 3.003 0 0 0 3 3h14a3.003 3.003 0 0 0 3-3v-6.28L15.163 14H8.837z" fill="currentColor"></path></svg>
+			Solutions
+		</button>
+	
+	
+	
+	</div></li>
+
+			<li><a class="flex items-center group px-2 py-0.5 hover:text-gray-500 dark:hover:text-gray-400" href="/pricing" data-ga-category="header-menu" data-ga-action="clicked pricing" data-ga-label="pricing">Pricing
+				</a></li>
+
+		<li><div class="relative group">
+	<button class="px-2 py-0.5 hover:text-gray-500 dark:hover:text-gray-600 flex items-center
+			" type="button">
+		<svg class="mr-1.5 text-gray-500 w-5 group-hover:text-gray-400 dark:text-gray-300 dark:group-hover:text-gray-400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" viewBox="0 0 32 18" preserveAspectRatio="xMidYMid meet"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.4504 3.30221C14.4504 2.836 14.8284 2.45807 15.2946 2.45807H28.4933C28.9595 2.45807 29.3374 2.836 29.3374 3.30221C29.3374 3.76842 28.9595 4.14635 28.4933 4.14635H15.2946C14.8284 4.14635 14.4504 3.76842 14.4504 3.30221Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.4504 9.00002C14.4504 8.53382 14.8284 8.15588 15.2946 8.15588H28.4933C28.9595 8.15588 29.3374 8.53382 29.3374 9.00002C29.3374 9.46623 28.9595 9.84417 28.4933 9.84417H15.2946C14.8284 9.84417 14.4504 9.46623 14.4504 9.00002Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.4504 14.6978C14.4504 14.2316 14.8284 13.8537 15.2946 13.8537H28.4933C28.9595 13.8537 29.3374 14.2316 29.3374 14.6978C29.3374 15.164 28.9595 15.542 28.4933 15.542H15.2946C14.8284 15.542 14.4504 15.164 14.4504 14.6978Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M1.94549 6.87377C2.27514 6.54411 2.80962 6.54411 3.13928 6.87377L6.23458 9.96907L9.32988 6.87377C9.65954 6.54411 10.194 6.54411 10.5237 6.87377C10.8533 7.20343 10.8533 7.73791 10.5237 8.06756L6.23458 12.3567L1.94549 8.06756C1.61583 7.73791 1.61583 7.20343 1.94549 6.87377Z" fill="currentColor"></path></svg>
+			
+		</button>
+	
+	
+	
+	</div></li>
+		<li><hr class="w-0.5 h-5 border-none bg-gray-100 dark:bg-gray-800"></li>
+		
+			<li><a class="px-2 py-0.5 block cursor-pointer hover:text-gray-500 dark:hover:text-gray-400" href="/login">Log In
+				</a></li>
+			<li><a class="ml-2 btn" href="/join">Sign Up </a></li></ul></nav></div></header></div>
+	
+	
+	<main class="flex flex-col flex-1 "><header class="bg-gradient-to-t from-gray-50-to-white via-white dark:via-gray-950 
+		pt-10 "><div class="container relative"><h1 class="flex items-center flex-wrap text-lg leading-tight 
+				mb-2 md:text-xl ">
+			<div class="flex items-center mb-1"><img alt="" class="w-4 h-4 rounded mr-1.5" src="https://aeiljuispo.cloudimg.io/v7/https://s3.amazonaws.com/moonup/production/uploads/1609621322398-5eff4688ff69163f6f59e66c.png?w=200&amp;h=200&amp;f=face">
+					<a href="/sentence-transformers" class="font-sans text-gray-400 hover:text-blue-600">sentence-transformers</a>
+					<div class="text-gray-300 mx-0.5">/</div></div>
+			<div class="max-w-full mb-1"><a class="font-mono font-semibold break-words" href="/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2">paraphrase-multilingual-MiniLM-L12-v2</a>
+				<div class="SVELTE_HYDRATER contents" data-props="{&quot;classNames&quot;:&quot;mr-4&quot;,&quot;title&quot;:&quot;Copy model name to clipboard&quot;,&quot;value&quot;:&quot;sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2&quot;}" data-target="CopyButton"><button class="inline-flex items-center relative bg-white text-sm focus:text-green-500  cursor-pointer focus:outline-none
+		mr-4
+		mx-0.5
+		
+		
+		text-gray-600
+		
+	" title="Copy model name to clipboard" type="button"><svg class="" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M28,10V28H10V10H28m0-2H10a2,2,0,0,0-2,2V28a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2Z" transform="translate(0)"></path><path d="M4,18H2V4A2,2,0,0,1,4,2H18V4H4Z" transform="translate(0)"></path><rect fill="none" width="32" height="32"></rect></svg>
+	
+	<div class="
+		absolute pointer-events-none transition-opacity bg-black text-white py-1 px-2 leading-tight rounded font-normal shadow 
+		left-1/2 top-full transform -translate-x-1/2 translate-y-2
+		opacity-0
+	"><div class="absolute bottom-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-black border-4 border-t-0" style="
+				border-left-color: transparent;
+				border-right-color: transparent;
+			"></div>
+	Copied</div></button></div></div>
+			<div class="SVELTE_HYDRATER contents" data-props="{&quot;isLoggedIn&quot;:false,&quot;classNames&quot;:&quot;mr-3 mb-1&quot;,&quot;isLikedByUser&quot;:false,&quot;likes&quot;:31,&quot;repoId&quot;:&quot;sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2&quot;,&quot;repoType&quot;:&quot;model&quot;}" data-target="LikeButton"><div class="inline-flex items-center border leading-none whitespace-nowrap text-sm rounded-md text-gray-500 overflow-hidden bg-white
+		 mr-3 mb-1"><button class="relative flex items-center px-1.5 py-1 hover:bg-gradient-to-t focus:outline-none from-red-50 to-transparent dark:from-red-900 dark:to-red-800 overflow-hidden"  title="Like"><svg class="mr-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" fill="currentColor"><path d="M22.45,6a5.47,5.47,0,0,1,3.91,1.64,5.7,5.7,0,0,1,0,8L16,26.13,5.64,15.64a5.7,5.7,0,0,1,0-8,5.48,5.48,0,0,1,7.82,0L16,10.24l2.53-2.58A5.44,5.44,0,0,1,22.45,6m0-2a7.47,7.47,0,0,0-5.34,2.24L16,7.36,14.89,6.24a7.49,7.49,0,0,0-10.68,0,7.72,7.72,0,0,0,0,10.82L16,29,27.79,17.06a7.72,7.72,0,0,0,0-10.82A7.49,7.49,0,0,0,22.45,4Z"></path></svg>
+
+		<svg class="mr-1 absolute text-red-500 origin-center transform transition ease-in\n\t\t\t\ttranslate-y-10 scale-0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" fill="currentColor"><path d="M22.5,4c-2,0-3.9,0.8-5.3,2.2L16,7.4l-1.1-1.1C12,3.3,7.2,3.3,4.3,6.2c0,0-0.1,0.1-0.1,0.1c-3,3-3,7.8,0,10.8L16,29l11.8-11.9c3-3,3-7.8,0-10.8C26.4,4.8,24.5,4,22.5,4z"></path></svg>
+		like
+	</button>
+	<button class="flex items-center px-1.5 py-1 border-l text-gray-400 focus:outline-none hover:bg-gray-50 dark:hover:bg-gray-700 focus:bg-gray-100 " title="See users who liked this repository">31</button></div>
+</div>
+			</h1>
+		<div class="SVELTE_HYDRATER contents" data-props="{&quot;tagObjs&quot;:[{&quot;id&quot;:&quot;sentence-similarity&quot;,&quot;label&quot;:&quot;Sentence Similarity&quot;,&quot;subType&quot;:&quot;nlp&quot;,&quot;type&quot;:&quot;pipeline_tag&quot;},{&quot;id&quot;:&quot;pytorch&quot;,&quot;label&quot;:&quot;PyTorch&quot;,&quot;type&quot;:&quot;library&quot;},{&quot;id&quot;:&quot;sentence-transformers&quot;,&quot;label&quot;:&quot;Sentence Transformers&quot;,&quot;type&quot;:&quot;library&quot;},{&quot;id&quot;:&quot;transformers&quot;,&quot;label&quot;:&quot;Transformers&quot;,&quot;type&quot;:&quot;library&quot;},{&quot;id&quot;:&quot;multilingual&quot;,&quot;label&quot;:&quot;multilingual&quot;,&quot;type&quot;:&quot;language&quot;},{&quot;id&quot;:&quot;arxiv:1908.10084&quot;,&quot;label&quot;:&quot;arxiv:1908.10084&quot;,&quot;type&quot;:&quot;arxiv&quot;},{&quot;id&quot;:&quot;license:apache-2.0&quot;,&quot;label&quot;:&quot;apache-2.0&quot;,&quot;type&quot;:&quot;license&quot;},{&quot;id&quot;:&quot;bert&quot;,&quot;label&quot;:&quot;bert&quot;,&quot;type&quot;:&quot;other&quot;},{&quot;id&quot;:&quot;feature-extraction&quot;,&quot;label&quot;:&quot;feature-extraction&quot;,&quot;type&quot;:&quot;other&quot;},{&quot;id&quot;:&quot;infinity_compatible&quot;,&quot;label&quot;:&quot;Infinity Compatible&quot;,&quot;type&quot;:&quot;other&quot;}]}" data-target="ModelHeaderTags"><div class="flex flex-wrap mb-3 lg:mb-5"><a class="tag 
+		tag-white" href="/models?pipeline_tag=sentence-similarity"><div class="tag-ico tag-ico-orange"><svg class="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" fill="currentColor" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M30 15H17V2h-2v13H2v2h13v13h2V17h13v-2z"></path><path d="M25.586 20L27 21.414L23.414 25L27 28.586L25.586 30l-5-5l5-5z"></path><path d="M11 30H3a1 1 0 0 1-.894-1.447l4-8a1.041 1.041 0 0 1 1.789 0l4 8A1 1 0 0 1 11 30zm-6.382-2h4.764L7 23.236z"></path><path d="M28 12h-6a2.002 2.002 0 0 1-2-2V4a2.002 2.002 0 0 1 2-2h6a2.002 2.002 0 0 1 2 2v6a2.002 2.002 0 0 1-2 2zm-6-8v6h6.001L28 4z"></path><path d="M7 12a5 5 0 1 1 5-5a5.006 5.006 0 0 1-5 5zm0-8a3 3 0 1 0 3 3a3.003 3.003 0 0 0-3-3z"></path></svg></div>
+	<span>Sentence Similarity</span>
+	</a><a class="tag 
+		tag-white" href="/models?library=pytorch"><svg class="text-black inline-block ml-2 text-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><defs><clipPath id="a"><rect x="3.05" y="0.5" width="25.73" height="31" fill="none"></rect></clipPath></defs><g clip-path="url(#a)"><path d="M24.94,9.51a12.81,12.81,0,0,1,0,18.16,12.68,12.68,0,0,1-18,0,12.81,12.81,0,0,1,0-18.16l9-9V5l-.84.83-6,6a9.58,9.58,0,1,0,13.55,0ZM20.44,9a1.68,1.68,0,1,1,1.67-1.67A1.68,1.68,0,0,1,20.44,9Z" fill="#ee4c2c"></path></g></svg>
+	<span>PyTorch</span>
+	</a><a class="tag 
+		tag-white" href="/models?library=sentence-transformers">
+	<span>Sentence Transformers</span>
+	</a><a class="tag 
+		tag-white" href="/models?library=transformers"><svg class="text-black inline-block ml-2 text-sm" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" preserveAspectRatio="xMidYMid meet" width="1em" height="1em" viewBox="0 0 90 90"><defs><mask id="a" x="31.46" y="42.5" width="26" height="25" maskUnits="userSpaceOnUse"><path d="M44.46,57.29c9.83,0,13-8.76,13-13.26,0-2.34-1.57-1.61-4.09-.36-2.33,1.15-5.46,2.74-8.91,2.74-7.18,0-13-6.88-13-2.38S34.63,57.29,44.46,57.29Z" fill="#fff"></path></mask></defs><path d="M44.71,77.5A34.75,34.75,0,1,0,10,42.75,34.75,34.75,0,0,0,44.71,77.5Z" fill="#ffd21e"></path><path d="M79.46,42.75A34.75,34.75,0,1,0,44.71,77.5,34.75,34.75,0,0,0,79.46,42.75ZM6,42.75A38.75,38.75,0,1,1,44.71,81.5,38.75,38.75,0,0,1,6,42.75Z" fill="#ff9d0b"></path><path d="M56,33.29c1.28.45,1.78,3.07,3.07,2.39a5,5,0,1,0-6.76-2.07C52.92,34.76,54.86,32.89,56,33.29Z" fill="#3a3b45"></path><path d="M32.45,33.29c-1.28.45-1.79,3.07-3.07,2.39a5,5,0,1,1,6.76-2.07C35.53,34.76,33.58,32.89,32.45,33.29Z" fill="#3a3b45"></path><path d="M44.46,57.29c9.83,0,13-8.76,13-13.26,0-2.34-1.57-1.61-4.09-.36-2.33,1.15-5.46,2.74-8.91,2.74-7.18,0-13-6.88-13-2.38S34.63,57.29,44.46,57.29Z" fill="#3a3b45"></path><g mask="url(#a)"><path d="M44.71,67.5a8.68,8.68,0,0,0,3-16.81l-.36-.13c-.84-.26-1.73,2.6-2.65,2.6S43,50.28,42.23,50.51a8.68,8.68,0,0,0,2.48,17Z" fill="#f94040"></path></g><path d="M68.21,38A3.25,3.25,0,1,0,65,34.75,3.25,3.25,0,0,0,68.21,38Z" fill="#ff9d0b"></path><path d="M21.71,38a3.25,3.25,0,1,0-3.25-3.25A3.25,3.25,0,0,0,21.71,38Z" fill="#ff9d0b"></path><path d="M15,49A5.22,5.22,0,0,0,11,50.87a5.92,5.92,0,0,0-1.33,3.75,7.28,7.28,0,0,0-1.94-.3A5.3,5.3,0,0,0,3.74,56a5.8,5.8,0,0,0-1.59,4.79A5.58,5.58,0,0,0,2.94,63a5.42,5.42,0,0,0-1.79,2.82,5.88,5.88,0,0,0,.79,4.74c-.08.12-.15.26-.22.39a5.2,5.2,0,0,0-.14,4.63c1,2.32,3.57,4.14,8.52,6.11,3.07,1.21,5.89,2,5.91,2a44.12,44.12,0,0,0,10.93,1.59c5.86,0,10.05-1.79,12.46-5.33C43.28,74.25,42.73,69,37.71,64a27.53,27.53,0,0,1-5-7.77c-.77-2.66-2.83-5.62-6.24-5.62h0a5.07,5.07,0,0,0-.86.07,5.68,5.68,0,0,0-3.73,2.38A13.22,13.22,0,0,0,19,50.28,7.41,7.41,0,0,0,15,49Zm0,4a3.6,3.6,0,0,1,1.82.65C19,55,23.09,62.08,24.6,64.83a2.43,2.43,0,0,0,2.14,1.31c1.55,0,2.75-1.53.15-3.48-3.92-2.93-2.55-7.72-.68-8a1,1,0,0,1,.24,0c1.7,0,2.45,2.93,2.45,2.93a31.55,31.55,0,0,0,6,9.29c3.77,3.77,4,6.8,1.22,10.84-1.88,2.75-5.47,3.58-9.16,3.58A41.51,41.51,0,0,1,17,79.81c-.11,0-13.45-3.8-11.76-7a1.39,1.39,0,0,1,1.34-.76c2.38,0,6.71,3.54,8.57,3.54A.77.77,0,0,0,16,75c.79-2.84-12.06-4-11-8.16a1.31,1.31,0,0,1,1.44-1c3.14,0,10.2,5.53,11.68,5.53a.28.28,0,0,0,.24-.11c.74-1.19.33-2-4.89-5.19S4.6,61,6.68,58.7a1.3,1.3,0,0,1,1-.38c3.17,0,10.66,6.82,10.66,6.82s2,2.1,3.25,2.1a.74.74,0,0,0,.68-.38c.86-1.46-8.06-8.22-8.56-11C13.37,54,14,53,15,53Z" fill="#ff9d0b"></path><path d="M36.1,77.69c2.75-4,2.55-7.07-1.22-10.84a31.55,31.55,0,0,1-6-9.29s-.82-3.21-2.69-2.91-3.24,5.08.68,8-.78,4.92-2.29,2.17S19,55,16.84,53.65s-3.63-.59-3.13,2.2,9.43,9.55,8.56,11-3.93-1.72-3.93-1.72S8.77,56.43,6.68,58.7,8.27,62.87,13.49,66s5.63,4,4.89,5.19S6.1,62.7,5,66.82,16.79,72.14,16,75,6.94,69.6,5.26,72.8s11.65,7,11.76,7C21.33,80.93,32.27,83.3,36.1,77.69Z" fill="#ffd21e"></path><path d="M74.9,49A5.21,5.21,0,0,1,79,50.87a5.92,5.92,0,0,1,1.33,3.75,7.35,7.35,0,0,1,2-.3A5.3,5.3,0,0,1,86.19,56a5.83,5.83,0,0,1,1.59,4.79A5.75,5.75,0,0,1,87,63a5.3,5.3,0,0,1,1.79,2.82A5.88,5.88,0,0,1,88,70.55c.08.12.16.26.23.39a5.26,5.26,0,0,1,.14,4.63c-1,2.32-3.58,4.14-8.52,6.11-3.08,1.21-5.89,2-5.92,2A44.12,44.12,0,0,1,63,85.27c-5.86,0-10-1.79-12.46-5.33C46.64,74.25,47.19,69,52.22,64a27.19,27.19,0,0,0,5-7.77c.78-2.66,2.83-5.62,6.24-5.62h0a4.91,4.91,0,0,1,.86.07,5.7,5.7,0,0,1,3.74,2.38,12.79,12.79,0,0,1,2.87-2.8A7.35,7.35,0,0,1,74.9,49Zm0,4a3.63,3.63,0,0,0-1.82.65C71,55,66.83,62.08,65.32,64.83a2.42,2.42,0,0,1-2.14,1.31c-1.54,0-2.75-1.53-.14-3.48,3.91-2.93,2.54-7.72.67-8a1,1,0,0,0-.24,0c-1.7,0-2.45,2.93-2.45,2.93a31.65,31.65,0,0,1-6,9.29c-3.78,3.77-4,6.8-1.22,10.84,1.87,2.75,5.47,3.58,9.15,3.58a41.61,41.61,0,0,0,9.93-1.46c.1,0,13.45-3.8,11.76-7a1.4,1.4,0,0,0-1.34-.76c-2.38,0-6.71,3.54-8.57,3.54a.76.76,0,0,1-.83-.61c-.8-2.84,12-4,11-8.16a1.31,1.31,0,0,0-1.44-1c-3.14,0-10.2,5.53-11.68,5.53a.25.25,0,0,1-.23-.11c-.74-1.19-.34-2,4.88-5.19S85.32,61,83.24,58.7a1.29,1.29,0,0,0-1-.38c-3.18,0-10.67,6.82-10.67,6.82s-2,2.1-3.24,2.1a.74.74,0,0,1-.68-.38c-.87-1.46,8-8.22,8.55-11C76.55,54,76,53,74.9,53Z" fill="#ff9d0b"></path><path d="M53.83,77.69c-2.75-4-2.56-7.07,1.22-10.84a31.65,31.65,0,0,0,6-9.29s.82-3.21,2.69-2.91,3.24,5.08-.67,8,.78,4.92,2.28,2.17S71,55,73.08,53.65s3.64-.59,3.13,2.2-9.42,9.55-8.55,11,3.92-1.72,3.92-1.72,9.58-8.71,11.66-6.44-1.58,4.17-6.8,7.33-5.63,4-4.89,5.19,12.27-8.52,13.35-4.4-11.76,5.32-11,8.16,9-5.38,10.74-2.18-11.65,7-11.76,7C68.6,80.93,57.65,83.3,53.83,77.69Z" fill="#ffd21e"></path></svg>
+	<span>Transformers</span>
+	</a><a class="tag 
+		tag-green" href="/models?language=multilingual">
+	<span>multilingual</span>
+	</a><a class="tag 
+		tag-purple" href="/models?arxiv=arxiv:1908.10084">
+	<span>arxiv:1908.10084</span>
+	</a><a class="tag 
+		tag-blue" href="/models?license=license:apache-2.0">
+	<span>apache-2.0</span>
+	</a><a class="tag 
+		tag-purple" href="/models?other=bert">
+	<span>bert</span>
+	</a><a class="tag 
+		tag-purple" href="/models?other=feature-extraction">
+	<span>feature-extraction</span>
+	</a><a class="tag 
+		tag-purple" href="/models?other=infinity_compatible"><svg class="ml-2" width="1em" height="1em" viewBox="0 0 349 155" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img"><path fill-rule="evenodd" clip-rule="evenodd" d="M77.4254 42.0939C58.0156 42.0939 42.2809 57.799 42.2809 77.1722C42.2809 96.5454 58.0156 112.25 77.4254 112.25V154.344C34.7239 154.344 0.107422 119.793 0.107422 77.1722C0.107422 34.5512 34.7239 0 77.4254 0C116.684 0 144.788 19.3459 167.187 40.3015L137.675 70.504C118.96 53.1048 101.389 42.0939 77.4254 42.0939ZM181.033 114.057C203.574 135.043 231.897 154.344 271.531 154.344V112.25C247.156 112.25 229.306 101.201 210.542 83.8571L181.033 114.057Z" fill="currentColor" opacity="0.5"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M271.141 42.0939C290.551 42.0939 306.286 57.799 306.286 77.1722C306.286 96.5454 290.551 112.25 271.141 112.25V112.304C270.876 112.294 270.609 112.289 270.34 112.289C258.72 112.289 249.3 121.709 249.3 133.329C249.3 144.949 258.72 154.369 270.34 154.369C270.685 154.369 271.027 154.36 271.368 154.344C313.965 154.222 348.459 119.718 348.459 77.1722C348.459 34.5512 313.843 0 271.141 0C219.197 0 186.78 33.8682 161.269 60.5213C160.594 61.227 159.923 61.9276 159.257 62.6224C131.402 91.6825 110.291 112.25 77.0352 112.25V112.289C77.0352 112.289 77.0352 112.289 77.0351 112.289C65.4151 112.289 55.9951 121.709 55.9951 133.329C55.9951 144.949 65.4151 154.369 77.0351 154.369C77.4121 154.369 77.7867 154.359 78.1587 154.339C130.221 153.858 162.646 120.001 188.168 93.3526L188.213 93.306L188.262 93.255C188.754 92.7412 189.243 92.2301 189.73 91.722C217.708 62.5338 238.492 42.0939 271.141 42.0939Z" fill="currentColor"></path></svg>
+	<span>Infinity Compatible</span>
+	</a></div></div>
+		<div class="border-b border-gray-100"><div class="flex flex-col-reverse lg:flex-row lg:items-center lg:justify-between"><div class="flex items-center h-12 -mb-px overflow-x-auto overflow-y-hidden"><a class="tab-alternate active" href="/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"><svg class="mr-1.5 text-gray-400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path class="uim-quaternary" d="M20.23 7.24L12 12L3.77 7.24a1.98 1.98 0 0 1 .7-.71L11 2.76c.62-.35 1.38-.35 2 0l6.53 3.77c.29.173.531.418.7.71z" opacity=".25" fill="currentColor"></path><path class="uim-tertiary" d="M12 12v9.5a2.09 2.09 0 0 1-.91-.21L4.5 17.48a2.003 2.003 0 0 1-1-1.73v-7.5a2.06 2.06 0 0 1 .27-1.01L12 12z" opacity=".5" fill="currentColor"></path><path class="uim-primary" d="M20.5 8.25v7.5a2.003 2.003 0 0 1-1 1.73l-6.62 3.82c-.275.13-.576.198-.88.2V12l8.23-4.76c.175.308.268.656.27 1.01z" fill="currentColor"></path></svg>
+			Model card
+		</a>
+		<a class="tab-alternate " href="/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/tree/main"><svg class="mr-1.5 text-gray-400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path class="uim-tertiary" d="M21 19h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zm0-4h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zm0-8h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2zm0 4h-8a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2z" opacity=".5" fill="currentColor"></path><path class="uim-primary" d="M9 19a1 1 0 0 1-1-1V6a1 1 0 0 1 2 0v12a1 1 0 0 1-1 1zm-6-4.333a1 1 0 0 1-.64-1.769L3.438 12l-1.078-.898a1 1 0 0 1 1.28-1.538l2 1.667a1 1 0 0 1 0 1.538l-2 1.667a.999.999 0 0 1-.64.231z" fill="currentColor"></path></svg>
+			<span class="xl:hidden">Files</span>
+			<span class="hidden xl:inline">Files and versions</span></a>
+		
+		</div>
+				<div class="SVELTE_HYDRATER contents" data-props="{&quot;model&quot;:{&quot;author&quot;:&quot;sentence-transformers&quot;,&quot;branch&quot;:&quot;main&quot;,&quot;cardData&quot;:{&quot;pipeline_tag&quot;:&quot;sentence-similarity&quot;,&quot;language&quot;:&quot;multilingual&quot;,&quot;license&quot;:&quot;apache-2.0&quot;,&quot;tags&quot;:[&quot;sentence-transformers&quot;,&quot;feature-extraction&quot;,&quot;sentence-similarity&quot;,&quot;transformers&quot;]},&quot;cardError&quot;:{&quot;errors&quot;:[],&quot;warnings&quot;:[]},&quot;cardExists&quot;:true,&quot;config&quot;:{&quot;architectures&quot;:[&quot;BertModel&quot;],&quot;model_type&quot;:&quot;bert&quot;},&quot;id&quot;:&quot;sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2&quot;,&quot;lastModified&quot;:&quot;2021-11-02T09:42:38.000Z&quot;,&quot;pipeline_tag&quot;:&quot;sentence-similarity&quot;,&quot;library_name&quot;:&quot;sentence-transformers&quot;,&quot;mask_token&quot;:&quot;[MASK]&quot;,&quot;model-index&quot;:null,&quot;private&quot;:false,&quot;gated&quot;:false,&quot;pwcLink&quot;:{&quot;error&quot;:&quot;Unknown error, can&#39;t generate link to Papers With Code.&quot;},&quot;tags&quot;:[&quot;pytorch&quot;,&quot;bert&quot;,&quot;feature-extraction&quot;,&quot;multilingual&quot;,&quot;arxiv:1908.10084&quot;,&quot;sentence-transformers&quot;,&quot;license:apache-2.0&quot;,&quot;sentence-similarity&quot;,&quot;transformers&quot;,&quot;infinity_compatible&quot;],&quot;tag_objs&quot;:[{&quot;id&quot;:&quot;sentence-similarity&quot;,&quot;label&quot;:&quot;Sentence Similarity&quot;,&quot;subType&quot;:&quot;nlp&quot;,&quot;type&quot;:&quot;pipeline_tag&quot;},{&quot;id&quot;:&quot;pytorch&quot;,&quot;label&quot;:&quot;PyTorch&quot;,&quot;type&quot;:&quot;library&quot;},{&quot;id&quot;:&quot;sentence-transformers&quot;,&quot;label&quot;:&quot;Sentence Transformers&quot;,&quot;type&quot;:&quot;library&quot;},{&quot;id&quot;:&quot;transformers&quot;,&quot;label&quot;:&quot;Transformers&quot;,&quot;type&quot;:&quot;library&quot;},{&quot;id&quot;:&quot;multilingual&quot;,&quot;label&quot;:&quot;multilingual&quot;,&quot;type&quot;:&quot;language&quot;},{&quot;id&quot;:&quot;arxiv:1908.10084&quot;,&quot;label&quot;:&quot;arxiv:1908.10084&quot;,&quot;type&quot;:&quot;arxiv&quot;},{&quot;id&quot;:&quot;license:apache-2.0&quot;,&quot;label&quot;:&quot;apache-2.0&quot;,&quot;type&quot;:&quot;license&quot;},{&quot;id&quot;:&quot;bert&quot;,&quot;label&quot;:&quot;bert&quot;,&quot;type&quot;:&quot;other&quot;},{&quot;id&quot;:&quot;feature-extraction&quot;,&quot;label&quot;:&quot;feature-extraction&quot;,&quot;type&quot;:&quot;other&quot;},{&quot;id&quot;:&quot;infinity_compatible&quot;,&quot;label&quot;:&quot;Infinity Compatible&quot;,&quot;type&quot;:&quot;other&quot;}],&quot;transformersInfo&quot;:{&quot;auto_model&quot;:&quot;AutoModel&quot;,&quot;pipeline_tag&quot;:&quot;feature-extraction&quot;,&quot;processor&quot;:&quot;AutoTokenizer&quot;},&quot;likes&quot;:31,&quot;isLikedByUser&quot;:false}}" data-target="ModelHeaderActions">
+
+
+<div class="relative mb-1.5 space-y-1 sm:flex sm:space-y-0 sm:space-x-1.5 lg:mb-0">
+	<div><div class="relative ">
+	<button class="text-sm btn
+			cursor-pointer w-full btn text-sm" type="button">
+		<svg class="mr-1.5 " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" fill="currentColor" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><rect x="6.34" y="19" width="11.31" height="2" transform="translate(-10.63 14.34) rotate(-45)"></rect><path d="M17,30a1,1,0,0,1-.37-.07,1,1,0,0,1-.62-.79l-1-7,2-.28.75,5.27L21,24.52V17a1,1,0,0,1,.29-.71l4.07-4.07A8.94,8.94,0,0,0,28,5.86V4H26.14a8.94,8.94,0,0,0-6.36,2.64l-4.07,4.07A1,1,0,0,1,15,11H7.48L4.87,14.26l5.27.75-.28,2-7-1a1,1,0,0,1-.79-.62,1,1,0,0,1,.15-1l4-5A1,1,0,0,1,7,9h7.59l3.77-3.78A10.92,10.92,0,0,1,26.14,2H28a2,2,0,0,1,2,2V5.86a10.92,10.92,0,0,1-3.22,7.78L23,17.41V25a1,1,0,0,1-.38.78l-5,4A1,1,0,0,1,17,30Z"></path></svg>
+			Deploy
+		<svg class="-mr-1 text-gray-500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" style="transform: rotate(360deg);"><path d="M7 10l5 5l5-5z" fill="currentColor"></path></svg></button>
+	
+	
+	
+	</div>
+		</div>
+	<div class=" "><button class="cursor-pointer w-full 
+		
+		btn 
+		text-sm" type="button" ><svg class="mr-1.5 " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg);"><path d="M31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7z" fill="currentColor"></path><path d="M1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7z" fill="currentColor"></path><path d="M12.419 25.484L17.639 6l1.932.518L14.35 26z" fill="currentColor"></path></svg>
+		Use in sentence-transformers</button>
+	</div></div></div>
+	</div></div></div></header>
+	
+<div class="container relative flex flex-col md:grid md:space-y-0 w-full
+	md:grid-cols-12
+	md:flex-1 md:grid-rows-full 
+		space-y-4
+		md:gap-6
+		
+	"><section class="pt-8 border-gray-100 md:col-span-7 pb-24 relative break-words">
+			
+			
+				<div class="md:mt-2 lg:pr-20 xl:pr-24 2xl:pr-36"><div class="prose dark:prose-light"><h1 class="relative group flex items-center">
+	<a rel="noopener nofollow" href="#sentence-transformersparaphrase-multilingual-minilm-l12-v2" class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" id="sentence-transformersparaphrase-multilingual-minilm-l12-v2">
+		<span class="header-link"><svg viewBox="0 0 256 256" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" role="img" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="text-gray-500 hover:text-black w-4"><path fill="currentColor" d="M167.594 88.393a8.001 8.001 0 0 1 0 11.314l-67.882 67.882a8 8 0 1 1-11.314-11.315l67.882-67.881a8.003 8.003 0 0 1 11.314 0zm-28.287 84.86l-28.284 28.284a40 40 0 0 1-56.567-56.567l28.284-28.284a8 8 0 0 0-11.315-11.315l-28.284 28.284a56 56 0 0 0 79.196 79.197l28.285-28.285a8 8 0 1 0-11.315-11.314zM212.852 43.14a56.002 56.002 0 0 0-79.196 0l-28.284 28.284a8 8 0 1 0 11.314 11.314l28.284-28.284a40 40 0 0 1 56.568 56.567l-28.285 28.285a8 8 0 0 0 11.315 11.314l28.284-28.284a56.065 56.065 0 0 0 0-79.196z"></path></svg></span>
+	</a>
+	<span>
+		sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+	</span>
+</h1>
+<p>This is a <a rel="noopener nofollow" href="https://www.SBERT.net">sentence-transformers</a> model: It maps sentences &amp; paragraphs to a 384 dimensional dense vector space and can be used for tasks like clustering or semantic search.</p>
+<h2 class="relative group flex items-center">
+	<a rel="noopener nofollow" href="#usage-sentence-transformers" class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" id="usage-sentence-transformers">
+		<span class="header-link"><svg viewBox="0 0 256 256" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" role="img" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="text-gray-500 hover:text-black w-4"><path fill="currentColor" d="M167.594 88.393a8.001 8.001 0 0 1 0 11.314l-67.882 67.882a8 8 0 1 1-11.314-11.315l67.882-67.881a8.003 8.003 0 0 1 11.314 0zm-28.287 84.86l-28.284 28.284a40 40 0 0 1-56.567-56.567l28.284-28.284a8 8 0 0 0-11.315-11.315l-28.284 28.284a56 56 0 0 0 79.196 79.197l28.285-28.285a8 8 0 1 0-11.315-11.314zM212.852 43.14a56.002 56.002 0 0 0-79.196 0l-28.284 28.284a8 8 0 1 0 11.314 11.314l28.284-28.284a40 40 0 0 1 56.568 56.567l-28.285 28.285a8 8 0 0 0 11.315 11.314l28.284-28.284a56.065 56.065 0 0 0 0-79.196z"></path></svg></span>
+	</a>
+	<span>
+		Usage (Sentence-Transformers)
+	</span>
+</h2>
+<p>Using this model becomes easy when you have <a rel="noopener nofollow" href="https://www.SBERT.net">sentence-transformers</a> installed:</p>
+<pre><code>pip install -U sentence-transformers
+</code></pre>
+<p>Then you can use the model like this:</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> sentence_transformers <span class="hljs-keyword">import</span> SentenceTransformer
+sentences = [<span class="hljs-string">"This is an example sentence"</span>, <span class="hljs-string">"Each sentence is converted"</span>]
+
+model = SentenceTransformer(<span class="hljs-string">'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'</span>)
+embeddings = model.encode(sentences)
+print(embeddings)
+</code></pre>
+<h2 class="relative group flex items-center">
+	<a rel="noopener nofollow" href="#usage-huggingface-transformers" class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" id="usage-huggingface-transformers">
+		<span class="header-link"><svg viewBox="0 0 256 256" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" role="img" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="text-gray-500 hover:text-black w-4"><path fill="currentColor" d="M167.594 88.393a8.001 8.001 0 0 1 0 11.314l-67.882 67.882a8 8 0 1 1-11.314-11.315l67.882-67.881a8.003 8.003 0 0 1 11.314 0zm-28.287 84.86l-28.284 28.284a40 40 0 0 1-56.567-56.567l28.284-28.284a8 8 0 0 0-11.315-11.315l-28.284 28.284a56 56 0 0 0 79.196 79.197l28.285-28.285a8 8 0 1 0-11.315-11.314zM212.852 43.14a56.002 56.002 0 0 0-79.196 0l-28.284 28.284a8 8 0 1 0 11.314 11.314l28.284-28.284a40 40 0 0 1 56.568 56.567l-28.285 28.285a8 8 0 0 0 11.315 11.314l28.284-28.284a56.065 56.065 0 0 0 0-79.196z"></path></svg></span>
+	</a>
+	<span>
+		Usage (HuggingFace Transformers)
+	</span>
+</h2>
+<p>Without <a rel="noopener nofollow" href="https://www.SBERT.net">sentence-transformers</a>, you can use the model like this: First, you pass your input through the transformer model, then you have to apply the right pooling-operation on-top of the contextualized word embeddings.</p>
+<pre><code class="language-python"><span class="hljs-keyword">from</span> transformers <span class="hljs-keyword">import</span> AutoTokenizer, AutoModel
+<span class="hljs-keyword">import</span> torch
+
+
+<span class="hljs-comment">#Mean Pooling - Take attention mask into account for correct averaging</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mean_pooling</span>(<span class="hljs-params">model_output, attention_mask</span>):</span>
+    token_embeddings = model_output[<span class="hljs-number">0</span>] <span class="hljs-comment">#First element of model_output contains all token embeddings</span>
+    input_mask_expanded = attention_mask.unsqueeze(<span class="hljs-number">-1</span>).expand(token_embeddings.size()).<span class="hljs-built_in">float</span>()
+    <span class="hljs-keyword">return</span> torch.<span class="hljs-built_in">sum</span>(token_embeddings * input_mask_expanded, <span class="hljs-number">1</span>) / torch.clamp(input_mask_expanded.<span class="hljs-built_in">sum</span>(<span class="hljs-number">1</span>), <span class="hljs-built_in">min</span>=<span class="hljs-number">1e-9</span>)
+
+
+<span class="hljs-comment"># Sentences we want sentence embeddings for</span>
+sentences = [<span class="hljs-string">'This is an example sentence'</span>, <span class="hljs-string">'Each sentence is converted'</span>]
+
+<span class="hljs-comment"># Load model from HuggingFace Hub</span>
+tokenizer = AutoTokenizer.from_pretrained(<span class="hljs-string">'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'</span>)
+model = AutoModel.from_pretrained(<span class="hljs-string">'sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2'</span>)
+
+<span class="hljs-comment"># Tokenize sentences</span>
+encoded_input = tokenizer(sentences, padding=<span class="hljs-literal">True</span>, truncation=<span class="hljs-literal">True</span>, return_tensors=<span class="hljs-string">'pt'</span>)
+
+<span class="hljs-comment"># Compute token embeddings</span>
+<span class="hljs-keyword">with</span> torch.no_grad():
+    model_output = model(**encoded_input)
+
+<span class="hljs-comment"># Perform pooling. In this case, max pooling.</span>
+sentence_embeddings = mean_pooling(model_output, encoded_input[<span class="hljs-string">'attention_mask'</span>])
+
+print(<span class="hljs-string">"Sentence embeddings:"</span>)
+print(sentence_embeddings)
+</code></pre>
+<h2 class="relative group flex items-center">
+	<a rel="noopener nofollow" href="#evaluation-results" class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" id="evaluation-results">
+		<span class="header-link"><svg viewBox="0 0 256 256" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" role="img" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="text-gray-500 hover:text-black w-4"><path fill="currentColor" d="M167.594 88.393a8.001 8.001 0 0 1 0 11.314l-67.882 67.882a8 8 0 1 1-11.314-11.315l67.882-67.881a8.003 8.003 0 0 1 11.314 0zm-28.287 84.86l-28.284 28.284a40 40 0 0 1-56.567-56.567l28.284-28.284a8 8 0 0 0-11.315-11.315l-28.284 28.284a56 56 0 0 0 79.196 79.197l28.285-28.285a8 8 0 1 0-11.315-11.314zM212.852 43.14a56.002 56.002 0 0 0-79.196 0l-28.284 28.284a8 8 0 1 0 11.314 11.314l28.284-28.284a40 40 0 0 1 56.568 56.567l-28.285 28.285a8 8 0 0 0 11.315 11.314l28.284-28.284a56.065 56.065 0 0 0 0-79.196z"></path></svg></span>
+	</a>
+	<span>
+		Evaluation Results
+	</span>
+</h2>
+<p>For an automated evaluation of this model, see the <em>Sentence Embeddings Benchmark</em>: <a rel="noopener nofollow" href="https://seb.sbert.net?model_name=sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2">https://seb.sbert.net</a></p>
+<h2 class="relative group flex items-center">
+	<a rel="noopener nofollow" href="#full-model-architecture" class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" id="full-model-architecture">
+		<span class="header-link"><svg viewBox="0 0 256 256" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" role="img" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="text-gray-500 hover:text-black w-4"><path fill="currentColor" d="M167.594 88.393a8.001 8.001 0 0 1 0 11.314l-67.882 67.882a8 8 0 1 1-11.314-11.315l67.882-67.881a8.003 8.003 0 0 1 11.314 0zm-28.287 84.86l-28.284 28.284a40 40 0 0 1-56.567-56.567l28.284-28.284a8 8 0 0 0-11.315-11.315l-28.284 28.284a56 56 0 0 0 79.196 79.197l28.285-28.285a8 8 0 1 0-11.315-11.314zM212.852 43.14a56.002 56.002 0 0 0-79.196 0l-28.284 28.284a8 8 0 1 0 11.314 11.314l28.284-28.284a40 40 0 0 1 56.568 56.567l-28.285 28.285a8 8 0 0 0 11.315 11.314l28.284-28.284a56.065 56.065 0 0 0 0-79.196z"></path></svg></span>
+	</a>
+	<span>
+		Full Model Architecture
+	</span>
+</h2>
+<pre><code>SentenceTransformer(
+  (0): Transformer({'max_seq_length': 128, 'do_lower_case': False}) with Transformer model: BertModel 
+  (1): Pooling({'word_embedding_dimension': 384, 'pooling_mode_cls_token': False, 'pooling_mode_mean_tokens': True, 'pooling_mode_max_tokens': False, 'pooling_mode_mean_sqrt_len_tokens': False})
+)
+</code></pre>
+<h2 class="relative group flex items-center">
+	<a rel="noopener nofollow" href="#citing--authors" class="block pr-1.5 text-lg with-hover:absolute with-hover:p-1.5 with-hover:opacity-0 with-hover:group-hover:opacity-100 with-hover:right-full" id="citing--authors">
+		<span class="header-link"><svg viewBox="0 0 256 256" preserveAspectRatio="xMidYMid meet" height="1em" width="1em" role="img" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="text-gray-500 hover:text-black w-4"><path fill="currentColor" d="M167.594 88.393a8.001 8.001 0 0 1 0 11.314l-67.882 67.882a8 8 0 1 1-11.314-11.315l67.882-67.881a8.003 8.003 0 0 1 11.314 0zm-28.287 84.86l-28.284 28.284a40 40 0 0 1-56.567-56.567l28.284-28.284a8 8 0 0 0-11.315-11.315l-28.284 28.284a56 56 0 0 0 79.196 79.197l28.285-28.285a8 8 0 1 0-11.315-11.314zM212.852 43.14a56.002 56.002 0 0 0-79.196 0l-28.284 28.284a8 8 0 1 0 11.314 11.314l28.284-28.284a40 40 0 0 1 56.568 56.567l-28.285 28.285a8 8 0 0 0 11.315 11.314l28.284-28.284a56.065 56.065 0 0 0 0-79.196z"></path></svg></span>
+	</a>
+	<span>
+		Citing &amp; Authors
+	</span>
+</h2>
+<p>This model was trained by <a rel="noopener nofollow" href="https://www.sbert.net/">sentence-transformers</a>. </p>
+<p>If you find this model helpful, feel free to cite our publication <a rel="noopener nofollow" href="https://arxiv.org/abs/1908.10084">Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks</a>:</p>
+<pre><code class="language-bibtex">@inproceedings{reimers-2019-sentence-bert,
+    title = "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+    author = "Reimers, Nils and Gurevych, Iryna",
+    booktitle = "Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing",
+    month = "11",
+    year = "2019",
+    publisher = "Association for Computational Linguistics",
+    url = "http://arxiv.org/abs/1908.10084",
+}
+</code></pre>
+</div></div></section>
+		<section class="pt-8 border-gray-100 md:col-span-5 pt-6 md:pb-24 md:pl-6 md:border-l order-first md:order-none"><div class="flex justify-between pb-2"><dl><dt class="-mb-1 text-sm text-gray-500">Downloads last month</dt><dd class="font-semibold">735,244</dd></dl>
+				<div class="model-graph flex-none" style="width: 200px; height: 40px;">
+			<svg 
+				viewbox="0 0 100 100" 
+				width="100%" 
+				height="100%" 
+				preserveAspectRatio="none"
+				style="overflow: visible;"
+			>
+				<defs>
+					<linearGradient id="fill-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+						<stop offset="0%" style="stop-color: rgb(137, 86, 255); stop-opacity:0.3" />
+						<stop offset="100%" style="stop-color: rgb(137, 86, 255); stop-opacity:0.05" />
+					</linearGradient>
+				</defs>
+				
+			<path d="M 0,36C 0.2,37.1 3.1,57.9 3.4,58.9C 3.7,59.9 6.6,56.3 6.9,55.3C 7.2,54.3 10,39.9 10.3,38.8C 10.6,37.7 13.5,34.2 13.8,33.9C 14.1,33.6 16.9,31.5 17.2,33.7C 17.5,35.9 20.4,76.8 20.7,77.7C 21,78.6 23.8,52.2 24.1,51.1C 24.4,50 27.3,54.2 27.6,55C 27.9,55.8 30.7,69.4 31,66.6C 31.3,63.9 34.2,2.9 34.5,0C 34.8,-2.9 37.9,8.7 37.9,8.7C 37.9,8.7 41.1,13.8 41.4,14.2C 41.7,14.6 44.5,17 44.8,17.6C 45.1,18.2 48,24.5 48.3,25.9C 48.6,27.3 51.4,44.2 51.7,44.7C 52,45.2 54.9,36.9 55.2,36.8C 55.5,36.7 58.3,41.8 58.6,41.7C 58.9,41.6 61.8,34.7 62.1,35.7C 62.4,36.7 65.2,61.2 65.5,62.2C 65.8,63.2 68.7,56.1 69,55.5C 69.3,54.9 72.1,50.7 72.4,50C 72.7,49.3 75.6,41.6 75.9,41.5C 76.2,41.4 79,47.2 79.3,47.1C 79.6,47 82.5,38.6 82.8,38.6C 83.1,38.6 85.9,45.9 86.2,47.4C 86.5,48.9 89.4,66.9 89.7,67.9C 90,68.9 92.8,68.3 93.1,67.6C 93.4,66.9 96.3,52.8 96.6,54.4C 96.9,56 99.8,97.7 100,100" 
+				fill="none"
+				stroke="rgb(137, 86, 255)" 
+				stroke-width="3"
+				vector-effect="non-scaling-stroke"
+			/>
+			<path d="M 0,100 L 0,36C 0.2,37.1 3.1,57.9 3.4,58.9C 3.7,59.9 6.6,56.3 6.9,55.3C 7.2,54.3 10,39.9 10.3,38.8C 10.6,37.7 13.5,34.2 13.8,33.9C 14.1,33.6 16.9,31.5 17.2,33.7C 17.5,35.9 20.4,76.8 20.7,77.7C 21,78.6 23.8,52.2 24.1,51.1C 24.4,50 27.3,54.2 27.6,55C 27.9,55.8 30.7,69.4 31,66.6C 31.3,63.9 34.2,2.9 34.5,0C 34.8,-2.9 37.9,8.7 37.9,8.7C 37.9,8.7 41.1,13.8 41.4,14.2C 41.7,14.6 44.5,17 44.8,17.6C 45.1,18.2 48,24.5 48.3,25.9C 48.6,27.3 51.4,44.2 51.7,44.7C 52,45.2 54.9,36.9 55.2,36.8C 55.5,36.7 58.3,41.8 58.6,41.7C 58.9,41.6 61.8,34.7 62.1,35.7C 62.4,36.7 65.2,61.2 65.5,62.2C 65.8,63.2 68.7,56.1 69,55.5C 69.3,54.9 72.1,50.7 72.4,50C 72.7,49.3 75.6,41.6 75.9,41.5C 76.2,41.4 79,47.2 79.3,47.1C 79.6,47 82.5,38.6 82.8,38.6C 83.1,38.6 85.9,45.9 86.2,47.4C 86.5,48.9 89.4,66.9 89.7,67.9C 90,68.9 92.8,68.3 93.1,67.6C 93.4,66.9 96.3,52.8 96.6,54.4C 96.9,56 99.8,97.7 100,100 L 100,100"
+				fill="url(#fill-gradient)"
+				stroke="none" 
+				vector-effect="non-scaling-stroke"
+			/>
+		
+			</svg>
+		</div></div>
+
+			<div class="divider-column-vertical"></div>
+			<div class="bg-white pb-1"><div class="SVELTE_HYDRATER contents" data-props="{&quot;apiUrl&quot;:&quot;https://api-inference.huggingface.co&quot;,&quot;apiToken&quot;:&quot;&quot;,&quot;model&quot;:{&quot;author&quot;:&quot;sentence-transformers&quot;,&quot;branch&quot;:&quot;main&quot;,&quot;cardData&quot;:{&quot;pipeline_tag&quot;:&quot;sentence-similarity&quot;,&quot;language&quot;:&quot;multilingual&quot;,&quot;license&quot;:&quot;apache-2.0&quot;,&quot;tags&quot;:[&quot;sentence-transformers&quot;,&quot;feature-extraction&quot;,&quot;sentence-similarity&quot;,&quot;transformers&quot;]},&quot;cardError&quot;:{&quot;errors&quot;:[],&quot;warnings&quot;:[]},&quot;cardExists&quot;:true,&quot;config&quot;:{&quot;architectures&quot;:[&quot;BertModel&quot;],&quot;model_type&quot;:&quot;bert&quot;},&quot;id&quot;:&quot;sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2&quot;,&quot;lastModified&quot;:&quot;2021-11-02T09:42:38.000Z&quot;,&quot;pipeline_tag&quot;:&quot;sentence-similarity&quot;,&quot;library_name&quot;:&quot;sentence-transformers&quot;,&quot;mask_token&quot;:&quot;[MASK]&quot;,&quot;model-index&quot;:null,&quot;private&quot;:false,&quot;gated&quot;:false,&quot;pwcLink&quot;:{&quot;error&quot;:&quot;Unknown error, can&#39;t generate link to Papers With Code.&quot;},&quot;tags&quot;:[&quot;pytorch&quot;,&quot;bert&quot;,&quot;feature-extraction&quot;,&quot;multilingual&quot;,&quot;arxiv:1908.10084&quot;,&quot;sentence-transformers&quot;,&quot;license:apache-2.0&quot;,&quot;sentence-similarity&quot;,&quot;transformers&quot;,&quot;infinity_compatible&quot;],&quot;tag_objs&quot;:[{&quot;id&quot;:&quot;sentence-similarity&quot;,&quot;label&quot;:&quot;Sentence Similarity&quot;,&quot;subType&quot;:&quot;nlp&quot;,&quot;type&quot;:&quot;pipeline_tag&quot;},{&quot;id&quot;:&quot;pytorch&quot;,&quot;label&quot;:&quot;PyTorch&quot;,&quot;type&quot;:&quot;library&quot;},{&quot;id&quot;:&quot;sentence-transformers&quot;,&quot;label&quot;:&quot;Sentence Transformers&quot;,&quot;type&quot;:&quot;library&quot;},{&quot;id&quot;:&quot;transformers&quot;,&quot;label&quot;:&quot;Transformers&quot;,&quot;type&quot;:&quot;library&quot;},{&quot;id&quot;:&quot;multilingual&quot;,&quot;label&quot;:&quot;multilingual&quot;,&quot;type&quot;:&quot;language&quot;},{&quot;id&quot;:&quot;arxiv:1908.10084&quot;,&quot;label&quot;:&quot;arxiv:1908.10084&quot;,&quot;type&quot;:&quot;arxiv&quot;},{&quot;id&quot;:&quot;license:apache-2.0&quot;,&quot;label&quot;:&quot;apache-2.0&quot;,&quot;type&quot;:&quot;license&quot;},{&quot;id&quot;:&quot;bert&quot;,&quot;label&quot;:&quot;bert&quot;,&quot;type&quot;:&quot;other&quot;},{&quot;id&quot;:&quot;feature-extraction&quot;,&quot;label&quot;:&quot;feature-extraction&quot;,&quot;type&quot;:&quot;other&quot;},{&quot;id&quot;:&quot;infinity_compatible&quot;,&quot;label&quot;:&quot;Infinity Compatible&quot;,&quot;type&quot;:&quot;other&quot;}],&quot;transformersInfo&quot;:{&quot;auto_model&quot;:&quot;AutoModel&quot;,&quot;pipeline_tag&quot;:&quot;feature-extraction&quot;,&quot;processor&quot;:&quot;AutoTokenizer&quot;},&quot;likes&quot;:31,&quot;isLikedByUser&quot;:false},&quot;shouldUpdateUrl&quot;:true}" data-target="InferenceWidget"><div class="flex flex-col w-full max-w-full
+	">
+	<div class="font-semibold flex items-center mb-2"><div class="text-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" class="-ml-1 mr-1 text-yellow-500" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M11 15H6l7-14v8h5l-7 14v-8z" fill="currentColor"></path></svg>
+				Hosted inference API
+			</div>
+			<a target="_blank" href="https://api-inference.huggingface.co/"><svg class="ml-1.5 text-sm text-gray-400 hover:text-black" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M17 22v-8h-4v2h2v6h-3v2h8v-2h-3z" fill="currentColor"></path><path d="M16 8a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 16 8z" fill="currentColor"></path><path d="M16 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14zm0-26a12 12 0 1 0 12 12A12 12 0 0 0 16 4z" fill="currentColor"></path></svg></a></div>
+<div class="flex items-center justify-between flex-wrap w-full max-w-full text-sm text-gray-500 mb-0.5"><a class="hover:underline" href="/tasks/sentence-similarity" target="_blank" title="Learn more about sentence-similarity"><div class="inline-flex items-center mr-2 mb-1.5"><svg class="mr-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" fill="currentColor" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M30 15H17V2h-2v13H2v2h13v13h2V17h13v-2z"></path><path d="M25.586 20L27 21.414L23.414 25L27 28.586L25.586 30l-5-5l5-5z"></path><path d="M11 30H3a1 1 0 0 1-.894-1.447l4-8a1.041 1.041 0 0 1 1.789 0l4 8A1 1 0 0 1 11 30zm-6.382-2h4.764L7 23.236z"></path><path d="M28 12h-6a2.002 2.002 0 0 1-2-2V4a2.002 2.002 0 0 1 2-2h6a2.002 2.002 0 0 1 2 2v6a2.002 2.002 0 0 1-2 2zm-6-8v6h6.001L28 4z"></path><path d="M7 12a5 5 0 1 1 5-5a5.006 5.006 0 0 1-5 5zm0-8a3 3 0 1 0 3 3a3.003 3.003 0 0 0-3-3z"></path></svg>
+	<span>Sentence Similarity</span></div></a>
+	</div>
+	<form class="flex flex-col space-y-2"><label class="block ">
+	<span class="text-sm text-gray-500">Source Sentence</span>
+	<input class="mt-1.5 form-input-alt block w-full " placeholder="Your sentence here..." type="text"></label>
+			<label class="block ">
+	<span class="text-sm text-gray-500">Sentences to compare to</span>
+	<input class="mt-1.5 form-input-alt block w-full " placeholder="Your sentence here..." type="text"></label>
+			<label class="block ">
+	
+	<input class=" form-input-alt block w-full " placeholder="Your sentence here..." type="text"></label>
+			<button class="btn-widget w-full h-10 px-5"  type="submit">Add Sentence</button>
+			<button class="btn-widget w-24 h-10 px-5 "  type="submit">Compute</button></form>
+	<div class="mt-2"><div class="text-gray-400 text-xs">This model can be loaded on the Inference API on-demand.</div>
+	</div>
+	
+	
+	
+	<div class="mt-auto pt-4 flex items-center text-xs text-gray-500"><button class="flex items-center cursor-not-allowed text-gray-300" disabled><svg class="mr-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" style="transform: rotate(360deg);"><path d="M31 16l-7 7l-1.41-1.41L28.17 16l-5.58-5.59L24 9l7 7z" fill="currentColor"></path><path d="M1 16l7-7l1.41 1.41L3.83 16l5.58 5.59L8 23l-7-7z" fill="currentColor"></path><path d="M12.419 25.484L17.639 6l1.932.518L14.35 26z" fill="currentColor"></path></svg>
+		JSON Output
+	</button>
+	<button class="flex items-center ml-auto"><svg class="mr-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M22 16h2V8h-8v2h6v6z" fill="currentColor"></path><path d="M8 24h8v-2h-6v-6H8v8z" fill="currentColor"></path><path d="M26 28H6a2.002 2.002 0 0 1-2-2V6a2.002 2.002 0 0 1 2-2h20a2.002 2.002 0 0 1 2 2v20a2.002 2.002 0 0 1-2 2zM6 6v20h20.001L26 6z" fill="currentColor"></path></svg>
+		Maximize
+	</button></div>
+</div></div></div>
+
+			
+
+			<div class="divider-column-vertical"></div>
+				<h2 class="mb-5 font-semibold text-gray-800 flex items-baseline whitespace-nowrap overflow-hidden text-smd"><svg class="mr-1 inline self-center flex-none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M7.80914 18.7462V24.1907H13.2536V18.7462H7.80914Z" fill="#FF3270"></path><path d="M18.7458 18.7462V24.1907H24.1903V18.7462H18.7458Z" fill="#861FFF"></path><path d="M7.80914 7.80982V13.2543H13.2536V7.80982H7.80914Z" fill="#097EFF"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.41775C4 5.08246 5.08246 4 6.41775 4H14.6457C15.7626 4 16.7026 4.75724 16.9802 5.78629C18.1505 4.67902 19.7302 4 21.4685 4C25.0758 4 28.0003 6.92436 28.0003 10.5317C28.0003 12.27 27.3212 13.8497 26.2139 15.02C27.243 15.2977 28.0003 16.2376 28.0003 17.3545V25.5824C28.0003 26.9177 26.9177 28.0003 25.5824 28.0003H17.0635H14.9367H6.41775C5.08246 28.0003 4 26.9177 4 25.5824V15.1587V14.9367V6.41775ZM7.80952 7.80952V13.254H13.254V7.80952H7.80952ZM7.80952 24.1907V18.7462H13.254V24.1907H7.80952ZM18.7462 24.1907V18.7462H24.1907V24.1907H18.7462ZM18.7462 10.5317C18.7462 9.0283 19.9651 7.80952 21.4685 7.80952C22.9719 7.80952 24.1907 9.0283 24.1907 10.5317C24.1907 12.0352 22.9719 13.254 21.4685 13.254C19.9651 13.254 18.7462 12.0352 18.7462 10.5317Z" fill="black"></path><path d="M21.4681 7.80982C19.9647 7.80982 18.7458 9.02861 18.7458 10.5321C18.7458 12.0355 19.9647 13.2543 21.4681 13.2543C22.9715 13.2543 24.1903 12.0355 24.1903 10.5321C24.1903 9.02861 22.9715 7.80982 21.4681 7.80982Z" fill="#FFD702"></path></svg>
+					Spaces using
+					<span class="font-mono font-medium text-[0.86rem] ml-1 truncate">sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2</span></h2>
+				<nav class="max-w-full flex flex-wrap gap-x-2.5 gap-y-2"><a href="/spaces/Endre/SemanticSearch-HU" class="text-xs md:text-sm leading-relaxed md:leading-relaxed flex items-center text-gray-500 rounded-lg border border-gray-100 shadow-sm hover:text-gray-800 dark:hover:text-gray-200 px-1.5 whitespace-nowrap "><div class="flex-none mr-2 text-[0.6rem] translate-y-px">💻</div>
+							<div class="group-hover:underline">Endre/SemanticSearch-HU</div>
+						</a><a href="/spaces/twinpiks/tst" class="text-xs md:text-sm leading-relaxed md:leading-relaxed flex items-center text-gray-500 rounded-lg border border-gray-100 shadow-sm hover:text-gray-800 dark:hover:text-gray-200 px-1.5 whitespace-nowrap "><div class="flex-none mr-2 text-[0.6rem] translate-y-px">🐳</div>
+							<div class="group-hover:underline">twinpiks/tst</div>
+						</a></nav>
+			
+			<div class="divider-column-vertical md:hidden"></div></section></div></main>
+	<footer class="border-t border-gray-100 md:h-14 b-12 flex mb-2"><nav class="flex md:items-center justify-between container py-6 md:py-0 space-y-2 md:space-y-0 text-gray-500 md:text-sm flex-col md:flex-row"><div class="font-semibold text-black md:hidden">Company</div>
+		<div class="text-gray-400 order-last md:order-none pt-6 md:pt-0" href="Terms">© Hugging Face
+		</div>
+		<a class="hover:underline" href="/terms-of-service">TOS</a>
+		<a class="hover:underline" href="/privacy">Privacy</a>
+		<a class="hover:underline" href="/huggingface">Team</a>
+		<a class="hover:underline" href="https://apply.workable.com/huggingface/">Jobs</a>
+		<a href="/" class="order-first md:order-none pb-6 md:pb-0 flex-none group"><svg class="w-7 h-7 group-hover:-translate-y-px transition-transform" viewBox="0 0 95 88" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M47.2119 76.5C66.4037 76.5 81.9619 60.9419 81.9619 41.75C81.9619 22.5581 66.4037 7 47.2119 7C28.02 7 12.4619 22.5581 12.4619 41.75C12.4619 60.9419 28.02 76.5 47.2119 76.5Z" fill="#FFD21E"></path><path d="M81.9619 41.75C81.9619 22.5581 66.4037 7 47.2119 7C28.02 7 12.4619 22.5581 12.4619 41.75C12.4619 60.9419 28.02 76.5 47.2119 76.5C66.4037 76.5 81.9619 60.9419 81.9619 41.75ZM8.46185 41.75C8.46185 20.349 25.8108 3 47.2119 3C68.6129 3 85.9619 20.349 85.9619 41.75C85.9619 63.151 68.6129 80.5 47.2119 80.5C25.8108 80.5 8.46185 63.151 8.46185 41.75Z" fill="#FF9D0B"></path><path d="M58.5024 32.2915C59.7768 32.7415 60.2839 35.3615 61.5713 34.6769C64.0095 33.3805 64.9351 30.353 63.6387 27.9148C62.3423 25.4767 59.3148 24.5511 56.8766 25.8475C54.4384 27.1439 53.5128 30.1714 54.8092 32.6096C55.4211 33.7604 57.3632 31.8892 58.5024 32.2915Z" fill="#3A3B45"></path><path d="M34.9454 32.2915C33.671 32.7415 33.164 35.3615 31.8766 34.6769C29.4384 33.3805 28.5128 30.353 29.8092 27.9148C31.1056 25.4767 34.1331 24.5511 36.5713 25.8475C39.0095 27.1439 39.9351 30.1714 38.6387 32.6096C38.0268 33.7604 36.0846 31.8892 34.9454 32.2915Z" fill="#3A3B45"></path><path d="M46.9619 56.289C56.7903 56.289 59.9619 47.5261 59.9619 43.0262C59.9619 40.6875 58.3898 41.4236 55.8718 42.6702C53.5449 43.8222 50.4102 45.4101 46.9619 45.4101C39.7822 45.4101 33.9619 38.5263 33.9619 43.0262C33.9619 47.5261 37.1334 56.289 46.9619 56.289Z" fill="#3A3B45"></path><mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="33" y="41" width="27" height="16"><path d="M46.9619 56.289C56.7903 56.289 59.9619 47.5261 59.9619 43.0262C59.9619 40.6875 58.3898 41.4236 55.8718 42.6702C53.5449 43.8222 50.4102 45.4101 46.9619 45.4101C39.7822 45.4101 33.9619 38.5263 33.9619 43.0262C33.9619 47.5261 37.1334 56.289 46.9619 56.289Z" fill="white"></path></mask><g mask="url(#mask0)"><path d="M47.2119 66.5C52.0018 66.5 55.8848 62.617 55.8848 57.8271C55.8848 54.0962 53.5291 50.9156 50.224 49.6915C50.1023 49.6464 49.9794 49.604 49.8553 49.5643C49.0219 49.2979 48.1337 52.1623 47.2119 52.1623C46.3506 52.1623 45.5186 49.2797 44.7332 49.5135C41.151 50.5799 38.5389 53.8984 38.5389 57.8271C38.5389 62.617 42.4219 66.5 47.2119 66.5Z" fill="#F94040"></path></g><path d="M70.7119 37C72.5068 37 73.9619 35.5449 73.9619 33.75C73.9619 31.9551 72.5068 30.5 70.7119 30.5C68.9169 30.5 67.4619 31.9551 67.4619 33.75C67.4619 35.5449 68.9169 37 70.7119 37Z" fill="#FF9D0B"></path><path d="M24.2119 37C26.0068 37 27.4619 35.5449 27.4619 33.75C27.4619 31.9551 26.0068 30.5 24.2119 30.5C22.4169 30.5 20.9619 31.9551 20.9619 33.75C20.9619 35.5449 22.4169 37 24.2119 37Z" fill="#FF9D0B"></path><path class="group-hover:-rotate-6 transition-transform origin-bottom-right" d="M17.5238 48C15.9048 48 14.4578 48.665 13.4488 49.871C12.8248 50.618 12.1728 51.822 12.1198 53.625C11.4408 53.43 10.7878 53.321 10.1778 53.321C8.6278 53.321 7.2278 53.915 6.2378 54.994C4.9658 56.379 4.4008 58.081 4.6468 59.784C4.7638 60.595 5.0348 61.322 5.4398 61.995C4.5858 62.686 3.9568 63.648 3.6528 64.805C3.4148 65.712 3.1708 67.601 4.4448 69.547C4.3638 69.674 4.2878 69.806 4.2168 69.941C3.4508 71.395 3.4018 73.038 4.0778 74.568C5.1028 76.887 7.6498 78.714 12.5958 80.675C15.6728 81.895 18.4878 82.675 18.5128 82.682C22.5808 83.737 26.2598 84.273 29.4448 84.273C35.2988 84.273 39.4898 82.48 41.9018 78.944C45.7838 73.25 45.2288 68.042 40.2058 63.022C37.4258 60.244 35.5778 56.148 35.1928 55.249C34.4168 52.587 32.3648 49.628 28.9538 49.628H28.9528C28.6658 49.628 28.3758 49.651 28.0898 49.696C26.5958 49.931 25.2898 50.791 24.3568 52.085C23.3498 50.833 22.3718 49.837 21.4868 49.275C20.1528 48.429 18.8198 48 17.5238 48ZM17.5238 52C18.0338 52 18.6568 52.217 19.3438 52.653C21.4768 54.006 25.5928 61.081 27.0998 63.833C27.6048 64.755 28.4678 65.145 29.2448 65.145C30.7868 65.145 31.9908 63.612 29.3858 61.664C25.4688 58.733 26.8428 53.942 28.7128 53.647C28.7948 53.634 28.8758 53.628 28.9538 53.628C30.6538 53.628 31.4038 56.558 31.4038 56.558C31.4038 56.558 33.6018 62.078 37.3778 65.851C41.1538 69.625 41.3488 72.654 38.5968 76.69C36.7198 79.442 33.1268 80.273 29.4448 80.273C25.6258 80.273 21.7108 79.379 19.5168 78.81C19.4088 78.782 6.0658 75.013 7.7558 71.805C8.0398 71.266 8.5078 71.05 9.0968 71.05C11.4768 71.05 15.8058 74.592 17.6668 74.592C18.0828 74.592 18.3758 74.415 18.4958 73.983C19.2888 71.138 6.4388 69.942 7.5218 65.821C7.7128 65.092 8.2308 64.796 8.9588 64.797C12.1038 64.797 19.1598 70.328 20.6388 70.328C20.7518 70.328 20.8328 70.295 20.8768 70.225C21.6178 69.029 21.2118 68.194 15.9888 65.033C10.7658 61.871 7.0998 59.969 9.1848 57.699C9.4248 57.437 9.7648 57.321 10.1778 57.321C13.3488 57.322 20.8408 64.14 20.8408 64.14C20.8408 64.14 22.8628 66.243 24.0858 66.243C24.3668 66.243 24.6058 66.132 24.7678 65.858C25.6348 64.396 16.7148 57.636 16.2118 54.847C15.8708 52.957 16.4508 52 17.5238 52Z" fill="#FF9D0B"></path><path class="group-hover:-rotate-6 transition-transform origin-bottom-right" d="M38.5967 76.6898C41.3487 72.6538 41.1537 69.6248 37.3777 65.8508C33.6017 62.0778 31.4037 56.5578 31.4037 56.5578C31.4037 56.5578 30.5827 53.3518 28.7127 53.6468C26.8427 53.9418 25.4697 58.7328 29.3867 61.6638C33.3037 64.5938 28.6067 66.5848 27.0997 63.8328C25.5927 61.0808 21.4777 54.0058 19.3437 52.6528C17.2107 51.2998 15.7087 52.0578 16.2117 54.8468C16.7147 57.6358 25.6357 64.3958 24.7677 65.8588C23.8997 67.3208 20.8407 64.1398 20.8407 64.1398C20.8407 64.1398 11.2687 55.4288 9.18465 57.6988C7.10065 59.9688 10.7657 61.8708 15.9887 65.0328C21.2127 68.1938 21.6177 69.0288 20.8767 70.2248C20.1347 71.4208 8.60465 61.6998 7.52165 65.8208C6.43965 69.9418 19.2887 71.1378 18.4957 73.9828C17.7027 76.8288 9.44465 68.5978 7.75565 71.8048C6.06565 75.0128 19.4087 78.7818 19.5167 78.8098C23.8267 79.9278 34.7727 82.2968 38.5967 76.6898Z" fill="#FFD21E"></path><path class="group-hover:rotate-6 transition-transform origin-bottom-left" d="M77.3999 48C79.0189 48 80.4659 48.665 81.4749 49.871C82.0989 50.618 82.7509 51.822 82.8039 53.625C83.4829 53.43 84.1359 53.321 84.7459 53.321C86.2959 53.321 87.6959 53.915 88.6859 54.994C89.9579 56.379 90.5229 58.081 90.2769 59.784C90.1599 60.595 89.8889 61.322 89.4839 61.995C90.3379 62.686 90.9669 63.648 91.2709 64.805C91.5089 65.712 91.7529 67.601 90.4789 69.547C90.5599 69.674 90.6359 69.806 90.7069 69.941C91.4729 71.395 91.5219 73.038 90.8459 74.568C89.8209 76.887 87.2739 78.714 82.3279 80.675C79.2509 81.895 76.4359 82.675 76.4109 82.682C72.3429 83.737 68.6639 84.273 65.4789 84.273C59.6249 84.273 55.4339 82.48 53.0219 78.944C49.1399 73.25 49.6949 68.042 54.7179 63.022C57.4979 60.244 59.3459 56.148 59.7309 55.249C60.5069 52.587 62.5589 49.628 65.9699 49.628H65.9709C66.2579 49.628 66.5479 49.651 66.8339 49.696C68.3279 49.931 69.6339 50.791 70.5669 52.085C71.5739 50.833 72.5519 49.837 73.4369 49.275C74.7709 48.429 76.1039 48 77.3999 48ZM77.3999 52C76.8899 52 76.2669 52.217 75.5799 52.653C73.4469 54.006 69.3309 61.081 67.8239 63.833C67.3189 64.755 66.4559 65.145 65.6789 65.145C64.1369 65.145 62.9329 63.612 65.5379 61.664C69.4549 58.733 68.0809 53.942 66.2109 53.647C66.1289 53.634 66.0479 53.628 65.9699 53.628C64.2699 53.628 63.5199 56.558 63.5199 56.558C63.5199 56.558 61.3219 62.078 57.5459 65.851C53.7699 69.625 53.5749 72.654 56.3269 76.69C58.2039 79.442 61.7969 80.273 65.4789 80.273C69.2979 80.273 73.2129 79.379 75.4069 78.81C75.5149 78.782 88.8579 75.013 87.1679 71.805C86.8839 71.266 86.4159 71.05 85.8269 71.05C83.4469 71.05 79.1179 74.592 77.2569 74.592C76.8409 74.592 76.5479 74.415 76.4279 73.983C75.6349 71.138 88.4849 69.942 87.4019 65.821C87.2109 65.092 86.6929 64.796 85.9649 64.797C82.8199 64.797 75.7639 70.328 74.2849 70.328C74.1719 70.328 74.0909 70.295 74.0469 70.225C73.3059 69.029 73.7119 68.194 78.9349 65.033C84.1579 61.871 87.8239 59.969 85.7389 57.699C85.4989 57.437 85.1589 57.321 84.7459 57.321C81.5749 57.322 74.0829 64.14 74.0829 64.14C74.0829 64.14 72.0609 66.243 70.8379 66.243C70.5569 66.243 70.3179 66.132 70.1559 65.858C69.2889 64.396 78.2089 57.636 78.7119 54.847C79.0529 52.957 78.4729 52 77.3999 52Z" fill="#FF9D0B"></path><path class="group-hover:rotate-6 transition-transform origin-bottom-left" d="M56.3271 76.6898C53.5751 72.6538 53.7701 69.6248 57.5461 65.8508C61.3221 62.0778 63.5201 56.5578 63.5201 56.5578C63.5201 56.5578 64.3411 53.3518 66.2111 53.6468C68.0811 53.9418 69.4541 58.7328 65.5371 61.6638C61.6201 64.5938 66.3171 66.5848 67.8241 63.8328C69.3311 61.0808 73.4461 54.0058 75.5801 52.6528C77.7131 51.2998 79.2151 52.0578 78.7121 54.8468C78.2091 57.6358 69.2881 64.3958 70.1561 65.8588C71.0241 67.3208 74.0831 64.1398 74.0831 64.1398C74.0831 64.1398 83.6551 55.4288 85.7391 57.6988C87.8231 59.9688 84.1581 61.8708 78.9351 65.0328C73.7111 68.1938 73.3061 69.0288 74.0471 70.2248C74.7891 71.4208 86.3191 61.6998 87.4021 65.8208C88.4841 69.9418 75.6351 71.1378 76.4281 73.9828C77.2211 76.8288 85.4791 68.5978 87.1681 71.8048C88.8581 75.0128 75.5151 78.7818 75.4071 78.8098C71.0971 79.9278 60.1511 82.2968 56.3271 76.6898Z" fill="#FFD21E"></path></svg></a>
+		<div class="font-semibold text-black pt-6 md:pt-0 md:hidden">Website</div>
+
+		<a class="hover:underline" href="/models">Models</a>
+		<a class="hover:underline" href="/datasets">Datasets</a>
+		<a class="hover:underline" href="/spaces">Spaces</a>
+		<a class="hover:underline" href="/pricing">Pricing</a>
+		<a class="hover:underline" href="/docs">Docs</a></nav></footer></div>
+
+		<script>
+			import("/front/build/module/index.ce96cc782.js");
+			window.supportsDynamicImport = true;
+		</script>
+		<script>
+			if (!window.supportsDynamicImport) {
+				const systemJsLoaderTag = document.createElement("script");
+				systemJsLoaderTag.src =
+					"https://unpkg.com/systemjs@2.0.0/dist/s.min.js";
+				systemJsLoaderTag.addEventListener("load", function () {
+					System.import("./front/build/nomodule/index.ce96cc782.js");
+				});
+				document.head.appendChild(systemJsLoaderTag);
+			}
+		</script>
+
+		<script type="text/javascript">
+			/// LinkedIn (part 1)
+			_linkedin_partner_id = "3734489";
+			window._linkedin_data_partner_ids =
+				window._linkedin_data_partner_ids || [];
+			window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+		</script>
+
+		<script>
+			if (
+				!(
+					["localhost", "huggingface.test"].includes(
+						window.location.hostname
+					) || window.location.hostname.includes("ngrok.io")
+				)
+			) {
+				(function (i, s, o, g, r, a, m) {
+					i["GoogleAnalyticsObject"] = r;
+					(i[r] =
+						i[r] ||
+						function () {
+							(i[r].q = i[r].q || []).push(arguments);
+						}),
+						(i[r].l = 1 * new Date());
+					(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+					a.async = 1;
+					a.src = g;
+					m.parentNode.insertBefore(a, m);
+				})(
+					window,
+					document,
+					"script",
+					"https://www.google-analytics.com/analytics.js",
+					"ganalytics"
+				);
+				ganalytics("create", "UA-83738774-2", "auto");
+				ganalytics("send", "pageview");
+
+				/// LinkedIn (part 2)
+				(function (l) {
+					if (!l) {
+						window.lintrk = function (a, b) {
+							window.lintrk.q.push([a, b]);
+						};
+						window.lintrk.q = [];
+					}
+					var s = document.getElementsByTagName("script")[0];
+					var b = document.createElement("script");
+					b.type = "text/javascript";
+					b.async = true;
+					b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+					s.parentNode.insertBefore(b, s);
+				})(window.lintrk);
+			}
+		</script>
+
+		<noscript>
+			<!-- LinkedIn (part 3) -->
+			<img
+				height="1"
+				width="1"
+				style="display: none"
+				alt=""
+				src="https://px.ads.linkedin.com/collect/?pid=3734489&fmt=gif"
+			/>
+		</noscript>
+	</body>
+</html>
